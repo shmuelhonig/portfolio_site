@@ -1,22 +1,24 @@
 <!doctype html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Shmuel Honig Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--insert links to stylesheets, including normalize-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="portfolio_styling.css" />
+<!--insert links to other stylesheets, including normalize-->
   </head>
   <body>
     <header>
-      <img src="udacity_logo.svg" alt="logo" width=50px />
-      <h1>Shmuel Honig</h1>
-      <h3>Software Developer</h3>
+      <img class="logo" src="udacity_logo.svg" alt="logo" width=50px height=50px />
+      <h1>Shmuel Honig
+        <span class="sub-heading">Software Developer</span>
+      </h1>
 <!--add border to bottom-->
     </header>
     <main>
       <section>
-        <figure>
-          <img src=https://imgs.xkcd.com/comics/wisdom_of_the_ancients.png alt="comic" />
+        <figure class="comic">
+          <img id="xkcd" src=https://imgs.xkcd.com/comics/wisdom_of_the_ancients.png alt="comic" width=100% />
           <figcaption>
             <a href="https://xkcd.com/979/">https://xkcd.com/979/</a>
           </figcaption>

@@ -44,6 +44,8 @@ h1 {
 h2 {
   color: #7d97ad;
   font: 200 2em "Open Sans";
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .sub-heading {

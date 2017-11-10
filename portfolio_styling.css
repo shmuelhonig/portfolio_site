@@ -38,9 +38,18 @@ h1 {
   margin-top: 0;
   margin-bottom: 0;
   color: #2d3c49;
-  font-family: "Open Sans";
-  font-size: 4em;
-  font-weight: 200;
+  font: 200 4em "Open Sans";
+}
+
+h2 {
+  color: #7d97ad;
+  font: 200 2em "Open Sans";
+}
+
+.sub-heading {
+  font-size: 0.5em;
+  line-height: 1;
+  text-align: right;
 }
 
 .logo {
@@ -49,18 +58,9 @@ h1 {
   height: 75px;
 }
 
-
 #xkcd {
   width: 60%;
 }
-
-.sub-heading {
-  font-size: 0.5em;
-  line-height: 1;
-  text-align: right;
-
-}
-
 
 .comic {
   display: -webkit-box;
@@ -75,6 +75,9 @@ h1 {
           align-items: center;
   margin-left: 0;
   margin-right: 0;
+}
+
+.featured-work {
 }
 
 @media screen and (max-width: 550px) {

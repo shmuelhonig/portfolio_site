@@ -72,7 +72,10 @@ h2 {
 }
 
 .featured-work {
-}
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+/*--how to line up grid items with heading; include heading in grid? How?*/
+  }
 
 @media screen and (max-width: 550px) {
   header {

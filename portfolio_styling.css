@@ -1,59 +1,110 @@
+*{box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
+
 body {
   margin-left: 20px;
   margin-right: 20px;
+  font-size: 16px;
 }
 
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+          align-items: center;
   margin-top: 50px;
   overflow: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding-bottom: 10px;
   border-bottom: 2px solid #7d97ad;
 }
 
 h1 {
-  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+          flex-direction: column;
+  float: right;
   margin-top: 0;
   margin-bottom: 0;
   color: #2d3c49;
-}
-
-@media screen and (max-width: 400px) {
-  header {
-    flex-direction: column;
-    align-items: center;
-  }
-  h1 {
-    align-items: center;
-  }
-}
-
-@media screen and (min-width: 1050px) {
-  body {
-    margin-left: 100px;
-    margin-right: 100px;
-  }
-}
-
-
-.sub-heading {
+  font-family: "Open Sans";
+  font-size: 4em;
+  font-weight: 200;
 }
 
 .logo {
   float: left;
+  width: 75px;
+  height: 75px;
 }
 
-.comic {
-  margin-left: 0;
-  margin-right: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
 #xkcd {
+  width: 60%;
+}
 
+.sub-heading {
+  font-size: 0.5em;
+  line-height: 1;
+  text-align: right;
+
+}
+
+
+.comic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+          align-items: center;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@media screen and (max-width: 550px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+            align-items: center;
+  }
+  h1 {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 2em;
+  }
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  #xkcd {
+    width: 70%;
+  }
 }

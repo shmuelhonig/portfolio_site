@@ -67,15 +67,46 @@ h2 {
   margin-right: auto;
 }
 
-.xkcd-caption {
+.caption {
   text-align: center;
 }
 
-.featured-work {
+.portfolio-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-/*--how to line up grid items with heading; include heading in grid? How?*/
-  }
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.project-1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.figure {
+  margin-bottom: 8px;
+}
+
+#lego {
+  max-width: 100%;
+}
+
+.project-title {
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: 1.5em;
+  color: #2d3c49;
+}
+
+.github-link {
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  color: #2d3c49;
+}
 
 @media screen and (max-width: 550px) {
   header {

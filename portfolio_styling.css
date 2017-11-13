@@ -91,9 +91,11 @@ h2 {
 
 .figure {
   margin-bottom: 8px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
-#lego {
+.project-image {
   max-width: 100%;
 }
 

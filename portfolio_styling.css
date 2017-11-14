@@ -1,4 +1,5 @@
-*{box-sizing: border-box;
+* {
+  box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -48,16 +49,16 @@ h2 {
   margin: 0;
 }
 
-#sub-heading {
-  font-size: 0.5em;
-  line-height: 1;
-  text-align: right;
-}
-
 .logo {
   float: left;
   width: 75px;
   height: 75px;
+}
+
+#sub-heading {
+  font-size: 0.5em;
+  line-height: 1;
+  text-align: right;
 }
 
 #xkcd {
@@ -69,13 +70,13 @@ h2 {
 
 .caption {
   text-align: center;
+  font-size: 0.75em;
 }
 
 .portfolio-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
+  grid-gap: 20px;
 }
 
 .project-1 {
@@ -113,6 +114,7 @@ h2 {
 }
 
 @media screen and (max-width: 550px) {
+
   header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -122,19 +124,23 @@ h2 {
     -ms-flex-align: center;
             align-items: center;
   }
+
   h1 {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
     font-size: 2em;
   }
+
   h2 {
     text-align: center;
   }
+
   .logo {
     width: 50px;
     height: 50px;
   }
+
   .portfolio-grid {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -153,12 +159,14 @@ h2 {
     margin: auto;
     width: 70%;
   }
+
   .project-title {
     font-size: 1.2em;
   }
 }
 
 @media screen and (min-width: 551px) and (max-width: 999px) {
+
   .project-title {
     font-size: 1em;
   }
@@ -169,10 +177,12 @@ h2 {
 }
 
 @media screen and (min-width: 1000px) {
+
   body {
     margin-left: 100px;
     margin-right: 100px;
   }
+
   #xkcd {
     width: 70%;
   }

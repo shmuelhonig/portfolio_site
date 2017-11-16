@@ -46,9 +46,10 @@ h1 {
 }
 
 h2 {
-  margin-bottom: 16px;
+  margin-bottom: 25px;
   color: #2d3c49;
-  font: 200 2em Open-Sans;
+  font: 200 2.5em Open-Sans;
+  text-align: center;
 }
 
 .logo {
@@ -113,8 +114,8 @@ h2 {
 }
 
 .project-title {
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin-top: 2px;
+  margin-bottom: 2px;
   color: #2d3c49;
   font-size: 1.5em;
   font-weight: 600;
@@ -122,10 +123,10 @@ h2 {
 }
 
 .github-link {
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin-top: 2px;
+  margin-bottom: 2px;
   color: #2d3c49;
-  font-weight: 400;
+  font-size: 0.8em;
   text-align: center;
 }
 
@@ -147,10 +148,6 @@ h2 {
     -ms-flex-align: center;
     align-items: center;
     font-size: 2em;
-  }
-
-  h2 {
-    text-align: center;
   }
 
   .logo {

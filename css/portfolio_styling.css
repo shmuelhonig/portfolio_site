@@ -32,17 +32,14 @@ header {
   border-bottom: 2px solid #7d97ad;
 }
 
-h1 {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  display: -webkit-box;
-  display: -ms-flexbox;
+.heading-wrapper {
   display: flex;
-          flex-direction: column;
+  flex-direction: column;
+}
+
+h1 {
   margin-top: 0;
   margin-bottom: 0;
-  float: right;
   color: #2d3c49;
   font: 400 4em Open-Sans;
 }
@@ -51,7 +48,6 @@ h2 {
   margin-bottom: 25px;
   color: #2d3c49;
   font: 200 2.5em Open-Sans;
-  text-align: center;
 }
 
 .logo {
@@ -60,8 +56,9 @@ h2 {
   float: left;
 }
 
-#sub-heading {
-  font-size: 0.5em;
+.sub-heading {
+  margin: 0;
+  font-size: 2em;
   line-height: 1;
   text-align: right;
 }
@@ -133,7 +130,7 @@ h2 {
 }
 
 /* small screens */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
 
   header {
     -webkit-box-orient: vertical;
@@ -145,11 +142,25 @@ h2 {
             align-items: center;
   }
 
+  .heading-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
   h1 {
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
+    text-align: center;
     font-size: 2em;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .sub-heading {
+    font-size: 1.2em;
+    text-align: center;
   }
 
   .logo {
@@ -191,7 +202,7 @@ h2 {
 }
 
 /* medium screens */
-@media screen and (min-width: 701px) and (max-width: 1099px) {
+@media screen and (min-width: 751px) and (max-width: 1099px) {
 
   .project-image-portrait {
     max-width: 100%;

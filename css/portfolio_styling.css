@@ -83,7 +83,7 @@ h2 {
 
 .portfolio-grid {
   display: grid;
-  grid-auto-rows: 400px;
+  grid-auto-rows: 350px;
   grid-gap: 40px;
   grid-template-columns: 1fr 1fr 1fr;
 }

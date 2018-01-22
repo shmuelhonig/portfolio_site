@@ -112,6 +112,10 @@ h2 {
   text-align: center;
 }
 
+a.project-title {
+  text-decoration: none;
+}
+
 .github-link {
   margin-top: 2px;
   margin-bottom: 2px;

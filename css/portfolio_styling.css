@@ -171,6 +171,10 @@ h2 {
     height: 50px;
   }
 
+  #xkcd {
+    width: 70%;
+  }
+
   .portfolio-grid {
     display: -webkit-box;
     display: -ms-flexbox;
